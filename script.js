@@ -11,7 +11,7 @@ let changingDirection = false;
 let appleCounter = 0; 
 let isGoldenApple = false;
 let walls = [];
-let currentSpeed = 130;
+let currentSpeed = 150;
 let superModeCounter = 0; 
 let particles = []; 
 let bgSnakes = []; // Τα φιδάκια του background
@@ -206,4 +206,5 @@ function gameOver() {
     clearInterval(gameLoop);
     if(score > hiScore) { hiScore=score; localStorage.setItem("googleSnakeHi", hiScore); highEl.innerText=hiScore; }
     msgEl.innerText = "GAME OVER"; overlay.style.display = "flex";
+
 }
